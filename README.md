@@ -1,3 +1,5 @@
-Development moved to https://gitlab.com/blacknet-ninja
+OLBITX POS coin
 
-https://olbitx.org/ aims to continue on OLBITX chain.
+Dependencies
+
+
