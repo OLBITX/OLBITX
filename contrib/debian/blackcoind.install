@@ -1,0 +1,2 @@
+debian/bin/olbitxd usr/bin
+src/olbitxd usr/lib/olbitx
