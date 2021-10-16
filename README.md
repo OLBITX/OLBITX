@@ -10,7 +10,7 @@
 ### Step 1: OpenSSL
 Download and build old version of openSSL: openssl-1.0.2u will do.
 ```bash
-apt-get install libcurl4-openssl-dev make
+apt-get install libcurl4-openssl-dev make perl-modules build-essential
 wget https://www.openssl.org/source/old/1.0.2/openssl-1.0.2u.tar.gz
 tar xzvf openssl-1.0.2u.tar.gz 
 cd openssl-1.0.2u
