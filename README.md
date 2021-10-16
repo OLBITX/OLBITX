@@ -44,6 +44,7 @@ export OPENSSL_LIB_PATH=/opt/openssl-1.0.2/lib
 export BOOST_INCLUDE_PATH=/opt/boost-1.65.1/include
 export BOOST_LIB_PATH=/opt/boost-1.65.1/lib
 qmake OLBITX-qt.pro 
+make
 ```
 
 
