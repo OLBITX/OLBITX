@@ -23,6 +23,7 @@ cd ..
 wget https://boostorg.jfrog.io/artifactory/main/release/1.65.1/source/boost_1_65_1.tar.gz
 tar xzvf boost_1_65_1.tar.gz 
 cd boost_1_65_1
+./bootstrap.sh --prefix=/opt/boost-1.65.1
 sudo ./b2 --prefix=/opt/boost-1.65.1 link=static threading=multi variant=release install
 cd ..
 ```
