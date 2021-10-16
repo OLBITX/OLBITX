@@ -16,6 +16,7 @@ tar xzvf openssl-1.0.2u.tar.gz
 cd openssl-1.0.2u
 ./config --prefix=/opt/openssl-1.0.2 --openssldir=/opt/openssl-1.0.2 && make && make test 
 sudo make install 
+cd ..
 ```
 ### Step 2: Boost
 ``` bash
@@ -23,6 +24,7 @@ wget https://boostorg.jfrog.io/artifactory/main/release/1.65.1/source/boost_1_65
 tar xzvf boost_1_65_1.tar.gz 
 cd boost_1_65_1
 sudo ./b2 --prefix=/opt/boost-1.65.1 link=static threading=multi variant=release install
+cd ..
 ```
 ### Step 3: Qt 5
 ```bash
