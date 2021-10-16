@@ -39,10 +39,10 @@ apt-get install git libcurl4-openssl-dev libdb++-dev libdb-dev libminiupnpc-dev 
 ```bash
 git clone https://github.com/OLBITX/OLBITX.git olbitx
 cd olbitx
-export OPENSSL_INCLUDE_PATH=/opt/openssl-1.0.2/include
-export OPENSSL_LIB_PATH=/opt/openssl-1.0.2/lib
-export BOOST_INCLUDE_PATH=/opt/boost-1.65.1/include
-export BOOST_LIB_PATH=/opt/boost-1.65.1/lib
+export OPENSSL_INCLUDE_PATH_DEF=/opt/openssl-1.0.2/include
+export OPENSSL_LIB_PATH_DEF=/opt/openssl-1.0.2/lib
+export BOOST_INCLUDE_PATH_DEF=/opt/boost-1.65.1/include
+export BOOST_LIB_PATH_DEF=/opt/boost-1.65.1/lib
 qmake OLBITX-qt.pro 
 make
 ```
