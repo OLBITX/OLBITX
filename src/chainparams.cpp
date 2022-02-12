@@ -9,7 +9,10 @@
 #include "main.h"
 #include "util.h"
 
+#include <stdio.h>
+#include <string>
 #include <boost/assign/list_of.hpp>
+
 
 using namespace boost::assign;
 
@@ -85,7 +88,13 @@ public:
         assert(hashGenesisBlock == uint256("0x0000017ecc04cf84f7bfc93e0b445df69f6a965038fa03a918544a46a712c20f"));
         assert(genesis.hashMerkleRoot == uint256("0xaf6111b1ea5f041aa3234690c3d88ee98f386dd9772cb1950cb5bce126908a34"));
 
-        vSeeds.push_back(CDNSSeedData("olbitx.network", "node8.olbitx.network"));
+        for(unsigned i = 1; i < 10; i++)
+        { 
+          std::string name = "olbitx.network" + std::to_string(i);
+          char s[4];
+          snprintf(s, sizeof(s), "%03d", i);
+          vSeeds.push_back(CDNSSeedData(name, "node" + std::string(s) + ".olbitx.network"));
+        }
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 49);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 48);
