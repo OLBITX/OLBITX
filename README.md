@@ -1,4 +1,4 @@
-# OLBITX PoS hedge coin
+# OLBITX PoS hedge coin (OLX 2.0)
 
 ## Dependencies
 
